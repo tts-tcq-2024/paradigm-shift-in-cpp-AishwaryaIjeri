@@ -32,7 +32,7 @@ BatteryStatus checkStateOfCharge(float soc) {
 BatteryStatus checkChargeRate(float chargeRate) {
     if (chargeRate > 0.8) {
         std::cout << "Charge Rate above maximum limit!\n";
-        return BatteryStatus::CHARGE_RATE_OUT_OF_RANGE_HIGH;
+        return BatteryStatus::CHARGE_RATE_OUT_OF_RANGE;
     }
     return BatteryStatus::OK;
 }
